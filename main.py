@@ -1,7 +1,7 @@
 import discord
 import random
 import time
-import private.py //All Private information stored here
+import private.py #All Private information stored here
 
 client = discord.Client(intents=discord.Intents.default())
 
@@ -51,7 +51,7 @@ async def on_message(message):
         await message.channel.send("https://discord.com/api/oauth2/authorize?client_id=1001282224999628891&permissions=412317240384&scope=bot")
 
     if message.content.startswith("*server"):
-        await message.channel.send("https://discord.gg/XVfnyYubvQ")
+        await message.channel.send(SERVER)
         
         
 
